@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RoboDance</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="robodance" content="let the robot dance" />
+	<link
+		href="https://uxwing.com/wp-content/themes/uxwing/download/17-internet-network-technology/robot.png"
+		rel="shortcut icon"
+    />
+</head>
+<body>
+	<header>
+		<h1>RoboDance</h1>
+		<p>Press &#9654; and use the mouse to make the robot dance</p>
+	</header>
+	<!--Video -->
+	<video autoplay muted loop class="background_video"
+		type="video/mp4"
+		src="https://cdn.videvo.net/videvo_files/video/free/2013-09/large_watermarked/DiscoLights2Videvo_preview.mp4">
+	</video>
+	<!-- Audio -->
+	<div class="music_player"> 	
+		<audio repeat loop
+			id="player" 
+			src="https://cdn.pixabay.com/audio/2021/04/03/audio_e02d0a56a5.mp3"
+			>
+		The computer can't upload the music
+		</audio>
+		<button onclick="document.getElementById('player').play()">&#9654;</button> 
+		<button onclick="document.getElementById('player').pause()">&#9724;</button>
+	</div>
+	<!-- content -->
+	<div class="robots">
+		<div class="android"> 
+			<div class="head"> 
+				<div class="eyes"> 
+					<div class="left_eye"></div> 
+					<div class="right_eye"></div>
+				</div> 
+			</div> 
+			<div class="upper_body"> 
+				<div class="left_arm"></div> 
+				<div class="torso"></div> 
+				<div class="right_arm"></div> 
+			</div> 
+			<div class="lower_body"> 
+				<div class="left_leg"></div> 
+				<div class="right_leg"></div> 
+			</div> 
+		</div>
+	</div>
+</body>
+</html>
